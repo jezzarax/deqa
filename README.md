@@ -1,6 +1,8 @@
 # Questions a Data Engineer has to answer
 Some data engineering interview prep questions and scenarios. Answers might come later :)
 
+Any PRs are welcome.
+
 ## Questions (WIP)
 
 * MapReduce
