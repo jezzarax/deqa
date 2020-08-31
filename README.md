@@ -5,6 +5,10 @@ Any PRs are welcome.
 
 ## Questions
 
+* Data processing considerations
+  * Why and when does data locality matter?
+  * Why and when is multi-region replication needed? What are the pros and cons there?
+
 * MapReduce
   * What is map-reduce programming model?
   * When and why would you use and? When and why not?
