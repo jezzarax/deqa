@@ -3,7 +3,7 @@ Some data engineering interview prep questions and scenarios. Answers might come
 
 Any PRs are welcome.
 
-## Questions (WIP)
+## Questions
 
 * MapReduce
   * What is map-reduce programming model?
@@ -22,7 +22,12 @@ Any PRs are welcome.
 * NoSQL databases
   * Why and when to use NoSQL? 
   * What are the common NoSQL database types?
-  * Explain the difference between K/V and Document databases? Bring some popular examples
+  * Explain the difference between K/V and Document databases? Bring some examples from your knowledge or experience.
   * Sharding and replication? Common scenarios?
   
 
+## Scenarios
+
+### Customer data processing
+
+Your company has to store and process customer document. Each customer usually has between 1 and 100 documents. Overall volume of data is around 300TB. The documents are stored in S3 (what changes if we use HDFS? Windows share? FTP?). The keys of the documents look like `/<creation_year>/<creation_month>/<creation_day>/<document_id>`. The `document_id<->customer_id` mapping is stored in a separate relational database. This naming scheme was chosen due to an internal process working on files in date-split chunks. Eventually the business representative comes with a request to enable per-customer data processing. The code to process customer data is provided to you by the business representative, it requires the files to be delivered to a local drive into a folder and it takes about an hour to process. How would you approach orchestrating of running of the customer processing code?
